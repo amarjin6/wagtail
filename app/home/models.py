@@ -10,6 +10,10 @@ from home.enums import Size
 
 
 class HomePage(Page):
+    subpage_types = [
+        'fktprojects.FKTPage',
+    ]
+
     image = models.ForeignKey(
         'wagtailimages.Image',
         null=True,
