@@ -21,11 +21,13 @@ class HomePage(Page):
     hero_text = models.CharField(
         max_length=100,
         help_text='Write an introduction for the bakery',
+        null=True,
     )
 
     hero_CTA = models.CharField(
         max_length=100,
         help_text='Text to display on Call to Action',
+        null=True,
     )
 
     section_2 = StreamField([
